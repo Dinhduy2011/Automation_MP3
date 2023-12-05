@@ -37,9 +37,9 @@ public class FilePage extends BasePage {
             long fileSizeInBytes = file.length(); // Get the size of the file in bytes
             float fileSizeInKB = fileSizeInBytes / 1024 ; // Convert bytes to KB
             fileSizeInMB = fileSizeInKB / 1024 ; // Convert KB to MB
-//            System.out.println("File Size in Bytes: " + fileSizeInBytes);
-//            System.out.printf("File Size in KB: %.2f\n", fileSizeInKB);
-//            System.out.printf("File Size in MB: %.2f\n", fileSizeInMB);;
+            System.out.println("File Size in Bytes: " + fileSizeInBytes);
+            System.out.printf("File Size in KB: %.2f\n", fileSizeInKB);
+            System.out.printf("File Size in MB: %.2f\n", fileSizeInMB);;
         } else {
             System.out.println("File does not exist or the path is incorrect.");
         }
@@ -47,9 +47,9 @@ public class FilePage extends BasePage {
             long fileSizeInBytes1 = file1.length(); // Get the size of the file in bytes
             float fileSizeInKB1 = fileSizeInBytes1 / 1024 ; // Convert bytes to KB
             fileSizeInMB1 = fileSizeInKB1 / 1024 ; // Convert KB to MB
-//            System.out.println("File Size in Bytes: " + fileSizeInBytes1);
-//            System.out.printf("File Size in KB: %.2f\n", fileSizeInKB1);
-//            System.out.printf("File Size in MB: %.2f\n", fileSizeInMB1);;
+            System.out.println("File Size in Bytes: " + fileSizeInBytes1);
+            System.out.printf("File Size in KB: %.2f\n", fileSizeInKB1);
+            System.out.printf("File Size in MB: %.2f\n", fileSizeInMB1);;
         } else {
             System.out.println("File does not exist or the path is incorrect.");
         }
