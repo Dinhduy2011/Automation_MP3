@@ -28,13 +28,13 @@ public class ListMusicPage extends BasePage {
     private WebElement nameMusic;
     @FindBy(xpath = "//div[@id='current-time']")
     private WebElement currentTime;   //div[@id='current-time']
-    @FindBy(xpath = "//div/a/div[text()='changthetimdcnhau123']")  // sửa tên bài để check Cancle delete
+    @FindBy(xpath = "//div/a/div[text()='changthetimdcnhau123']")  // change name
     ////div[@id='song-name52']
     private WebElement textMusicDelete;
     @FindBy(xpath = "//div[@id='delete-track']")
     private WebElement popupDelete;
     @FindBy(xpath = "//div/a/div[text()='changthetimdcnhau123']/ancestor::div[@class='song-top']/parent::div/child::div[@class='track-actions-container']//div[@class='delete-button']")
-    // //div[@id='delete-button-36']
+    //div[@id='delete-button-36']
     //div/a/div[text()='Only']/ancestor::div[@class='song-top']/parent::div/child::div[@class='track-actions-container']//div[@class='delete-button']
     private WebElement btnDelete;
     @FindBy(xpath = "//a[normalize-space()='Cancel']")
@@ -91,7 +91,7 @@ public class ListMusicPage extends BasePage {
         System.out.println("Open pop-up successfully");
         btnCancel.click();
         String ActualMusic = textMusicDelete.getText();
-        String ExpectedMusic = "changthetimdcnhau123"; // Sửa tên bài cần KTR khi delete cancle
+        String ExpectedMusic = "changthetimdcnhau123"; // Change name
         Assert.assertEquals(ExpectedMusic, ActualMusic);
         System.out.println("--You have failed to delete data");
     }
